@@ -7,4 +7,5 @@ public interface IHp
     float hpMax { get; }
     event Action<float> onHpDepleted;
     void DepleteHp(float value);
+    // 인터페이스
 }
