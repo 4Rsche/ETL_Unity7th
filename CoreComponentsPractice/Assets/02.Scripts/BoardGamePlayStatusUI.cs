@@ -20,7 +20,7 @@ public class BoardGamePlayStatusUI : MonoBehaviour
     IEnumerator C_RollingAnimation(int value, Action<int> onFinished)
     {
         int count = 0;
-        float elapsedTime = 0.0f;
+        float elapsedTime = 1.0f;
 
         while (elapsedTime < _rollingAnimationDuration)
         {

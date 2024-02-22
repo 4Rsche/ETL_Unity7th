@@ -12,7 +12,10 @@ namespace DiceGame.Level
 
         [SerializeField] private int _nodeIndex;
 
-
+        private void Awake()
+        {
+            BoardGameMap.Register(this);
+        }
         public virtual void OnPlayerHere()
         {
             PlayerController.instance.direction = PlayerController.DIRECTION_POSITIVE;
